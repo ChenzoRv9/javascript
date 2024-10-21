@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002</title>
+    <style>
+        body{
+            background-color: rgb(44, 17, 42);
+            color: white;
+            font-size: normal;
+            font-weight: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratamento de dados</h1>
+    <p>transformando dados string em number</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número')) //number 
+        var n2 = Number(window.prompt('Digite outro número')) //number
+        // (number.parseInt) string for number inteiro...
+        // (number.parseFloat) string for number real...
+        // (number) versão simplificada...
+        var s = n1 + n2 
+        window.alert('A soma dos números é: ' + String(s)) // Concatenação transformada em adição e variável 's' em string...
+        // (number + number) para adição...
+        // (string + string) para concatenação...
+        var p1 = window.prompt('Agora digite um número novo') //string
+        var p2 = window.prompt('digite outro numero') //string
+        var c = p1 + p2
+        window.alert('A concatenação dos números é: ' + c)// Concatenação
+        // 'String(n)' ou 'n.toString()' transforma os dados em strings...
+
+        // template string
+        /*
+            > ' O aluno ' + nome + 'com idade ' + idade + ' tirou nota ' + nota
+            ' O aluno Chenzo com idade 18 tirou nota 8'
+            > `O aluno ${nome} com idade ${idade} tirou nota ${nota}`
+            'O aluno Chenzo com idade 18 tirou nota 8'*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 004</title>
+</head>
+<body>
+
+    <p>Aqui tem um segredo</p>
+    <!-- TERMINAL EXEMPLO+
+    
+    > n1.toFixed(2).replace('.', ',')
+'1545,50'
+    > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+    > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'US$ 1.545,50'
+    > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+'€ 1.545,50' -->
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome')   //pergunta o nome e armazena na variável 'nome'
+        document.write(`Seu nome tem ${nome.length} letras <br>`)   // exibe a variável nome 
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} e em minusculo é ${nome.toLowerCase()} <br>`)    // Exibe no conteúdo a variável nome em maiúsculo e minúsculo
+        var idade = prompt('Quantos anos você tem?')    // Pergunta a idade e armazena na variável 'idade' 
+        var real = Number(prompt(`Você, tendo ${ idade } anos, acha que deveria receber quanto?`))  // Pergunta o salário quer o usuário quer receber e armazena na variável 'real' transformando o valor do dado de "string" para "number"
+        document.write(`Com ${idade}  anos, você quer receber R$ ${real.toFixed(2).replace('.', ',')} `)    // Exibe no conteúdo a variável 'idade'. Também exibe a variável 'real' convertida em duas casas decimais, além de substituir o ponto(.) pela virgula(,)
+
+    </script>
+</body>
+</html>
